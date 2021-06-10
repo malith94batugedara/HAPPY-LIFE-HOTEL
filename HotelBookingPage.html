@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Happy Life Hotel </title>   
+    <link rel="stylesheet" type="text/css" href="css/hotelpickmeup.css">
+    <link rel="stylesheet" type="text/css" href="css/handle-maiFunction.css">
+    <link rel="stylesheet" type="text/css" href="css/hotelmain.css">     
+    
+    
+	
+	
+    
+    </head>
+    
+<body>
+    <header class="tm-header">
+        <img class="tm-logo" src="images/home1.png" alt="Happy Life Hotel">
+        <nav class="tm-nav">
+       <div>
+            <ul>
+                <li class="tm-list"><a href="HotelHomePage.html">Home Page </a></li>
+                <li class="tm-list"><a href="HotelFacilitiesPage.html">Room Facilities</a></li>
+                <li class="tm-list"><a href="HotelRoomDetailsPage.html">Rooms</a></li>
+                <li class="tm-list"><a href="HotelBookingPage.html"> Room Booking</a></li>
+                <li><a href="HotelContactPage.html">Contact</a></li>
+            </ul>    
+            </div>
+        </nav>
+    </header>
+    
+    
+    <section class="tm-main1">
+           <p>Booking Information</p>
+    </section>
+    
+    
+    
+    <section class="tm-booking" >
+    <div class="tm-formb">
+    
+    <form  id="newForm" action="phpregistration.php"  method="post"  onSubmit="return validateForm();"  >
+        
+
+		   <table >
+
+				<tr>
+					<td > Name </td>
+					<td > :</td>
+					<td><input type="text" placeholder="First Name" id="data_2" name="data_2" class="form-control" style="max-width : 350px;"/> </td>
+				</tr>
+				<tr>
+					<td > Address </td>
+					<td > :</td>
+					<td><input type="text" placeholder="Address" id="data_3" name="data_3"  class="form-control" style="max-width : 350px;" /> </td>
+				</tr>
+				<tr>
+					<td >Phone Number </td>
+					<td > :</td>
+					<td><input type="text" placeholder="Phone number" id="data_4" name="data_4"  class="form-control" style="max-width : 350px;"/> </td>
+				</tr>
+				<tr>
+					<td  > Email </td>
+					<td  > :</td>
+					<td><input type="text" placeholder="Email" id="data_5" name="data_5"  class="form-control" style="max-width : 350px;"/> </td>
+				</tr>
+				
+				<tr>
+					<td > Rooms </td>
+					<td > : </td>
+					<td>
+						<select name="data_6" id="data_6"  class="form-control" style="width: 350px">
+						<option value="luxurys">Luxury Suite</option>
+						<option value="deluxs">Delux Suite</option>
+						<option value="premiers">Premier Suite</option>
+						<option value="Luxuryr">Luxury Room</option>
+						<option value="deluxs">Delux Room</option>
+						<option value="premierr">Premier Room</option>
+					  </select> 
+					   </td>
+				</tr>
+				
+				<tr>
+					<td > Number Of Rooms </td>
+					<td > :</td>
+					
+					 
+                       <td>
+                        <select  id="data_7" name="data_7"  style="width : 350px;" class="form-control">
+                            <option value="-">-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="4">5</option>
+                            <option value="1">6</option>
+                            <option value="2">7</option>
+                            <option value="3">8</option>
+                            <option value="4">9</option>
+                            <option value="4">10</option>
+                            <option value="1">11</option>
+                            <option value="2">12</option>
+                            <option value="3">13</option>
+                            <option value="4">14</option>
+                            <option value="4">15</option>
+                        </select>
+                    
+					</td>
+				</tr>
+
+				<tr>
+
+					<td > Arrival date </td>
+					<td > :</td>
+					<td>
+
+						<input type="text" placeholder="Arrival Date"   id="data_8" name="data_8" style="max-width : 350px;"/>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js" type="text/javascript"></script>
+					<link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet" type="text/css" />
+					<script type="text/javascript">new Pikaday({ field: document.getElementById('data_8') });</script>
+					</td>
+
+				</tr>
+					<tr>
+
+					<td > Departure Date </td>
+					<td  width="25px"> :</td>
+					<td><input type="text" placeholder="Departure Date" id="data_9" name="data_9" style="max-width : 350px;"/> 
+
+					<script src="https://cdnjs.cloudflare.com/ajax/libs//1.4.0/pikaday.min.js" type="text/javascript"></script>
+					<link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet" type="text/css" />
+					<script type="text/javascript">new Pikaday({ field: document.getElementById('data_9') });</script>
+
+					</td>
+				</tr>
+				
+
+			    
+
+	
+			</table>
+         
+         	
+         			<input type="submit" name="save"   id="save" class="btn" style="width : 200px;" value="Proceed">
+         		
+         	
+    </form>
+    </div>
+  </section>
+    
+    
+    <footer class="tm-footer">
+        <div class="tm-us">
+        <p class="bold">About Us</p>
+        <p>Happy Life Hotel offers impeccable service and all the essential amenities to invigorate travelers. Free Wi-Fi in all rooms, 24-hour front desk, Wi-Fi in public areas, car park, and room service are just a few of the facilities that set Happy Life Hotel apart from other hotels in the city.</p>
+
+     <p>All guest accommodations feature thoughtful amenities to ensure an unparalleled sense of comfort. 		  The complete list of recreational facilities is available at the hotel Restaurant,swimming        pool 		  and tea cafe . Happy Life Hotel is your one-stop destination for quality hotel        accommodations in         Batticaloa. </p>
+     <p>
+     	
+     </p>
+	<p> The accommodation will provide you with air conditioning and a balcony. Standard features include     a satellite TV, a minibar and a safety deposit box. Featuring a bath or shower, a private             bathroom also comes with a hairdryer and free toiletries.</p>
+   <p>
+   	
+   </p>
+
+   <p>Guests at Happy Life Village can enjoy the vibrant coral reef of  Sea through diving or snorkeling,    both available at a surcharge. 
+   </p>    
+        </div>
+       
+        <div class="tm-address">
+        <p class="bold">Address</p>
+        <p> No10 , Trinco Road, Batticaloa, Srilanka.</p>
+		<p> Phone : (+94) 651234567 </p>
+        <p> Email : happylife22@gmail.com</p>    
+        </div>
+        <br/>
+    <div class="tm-media">
+        <a href="https://www.facebook.com/"> <img src="images/fb.png"></a>
+        <a href="https://www.google.com/"> <img src="images/G.png"> </a>
+        <a href="https://twitter.com/login?lang=en"> <img src="images/twittr.png"> </a>
+        <a href="https://www.instagram.com/accounts/login">  <img src="images/insta.png"> </a>
+        
+        </div>
+
+    </footer>
+    <script type="text/javascript">
+		function validateForm() {
+		if (isEmpty(document.getElementById('data_2').value.trim())) {
+		alert('Name is required!');
+		newFunction();
+		return false;
+		}
+		if (isEmpty(document.getElementById('data_3').value.trim())) {
+		alert('Address is required!');
+		newFunction();
+		return false;
+		}
+		if (isEmpty(document.getElementById('data_4').value.trim())) {
+		alert('Phone Number is required!');
+		newFunction();
+		return false;
+		}
+		if (isEmpty(document.getElementById('data_5').value.trim())) {
+		alert('Email is required!');
+		newFunction();
+		return false;
+		}
+		if (!validateEmail(document.getElementById('data_5').value.trim())) {
+		alert('Email must be a valid email address!');
+		newFunction();
+		return false;
+		}
+		if (isEmpty(document.getElementById('data_6').value.trim())) {
+		alert('Select the Room is required!');
+		newFunction();
+		return false;
+		}
+			if (isEmpty(document.getElementById('data_7').value.trim())) {
+		alert('Select the Number of Room is required!');
+		newFunction();
+		return false;
+		}
+		if (isEmpty(document.getElementById('data_8').value.trim())) {
+		alert('Arrival date  is required!');
+		newFunction();
+		return false;
+		}
+		if (isEmpty(document.getElementById('data_9').value.trim())) {
+		alert('Departure dateis required!');
+		newFunction();
+		return false;
+		}
+		alert(' Correctly Entered  all data  !');
+		alert ("  Hotel  Resevation Person Details ....."+
+							"\n Name               : "+document.getElementById('data_2').value.trim()+ 
+							"\n Address            : "+document.getElementById('data_3').value.trim()+ 
+							"\n Phone Number       : "+document.getElementById('data_4').value.trim()+
+							"\n Email              : "+document.getElementById('data_5').value.trim()+ 
+							"\n Type of Room       : "+document.getElementById('data_6').value.trim()+ 
+							"\n No of Room         : "+document.getElementById('data_7').value.trim()+
+							"\n Arival Date        : "+document.getElementById('data_8').value.trim()+
+							"\n Departure Date     : "+document.getElementById('data_9').value.trim());		
+		return true;
+
+		}
+		function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+		function validateEmail(email) {
+		var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+		return isEmpty(email) || re.test(email);
+		}
+
+				function newFunction() {
+					document.getElementById("newForm").reset();
+				 }
+
+
+
+
+		
+</script>
+    
+
+    
+    </body>
+    
+</html>
+    
